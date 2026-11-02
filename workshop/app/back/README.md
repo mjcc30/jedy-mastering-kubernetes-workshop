@@ -42,7 +42,7 @@ The main dependencies for this service are:
 - `fastapi`: The web framework.
 - `uvicorn`: The ASGI server.
 - `sqlmodel`: The database ORM.
-- `psycopg2-binary`: The PostgreSQL adapter for Python.
+- `psycopg[binary]`: The PostgreSQL adapter for Python (v3).
 - `python-jose[cryptography]`: For JWT creation and validation.
 - `passlib[bcrypt]`: For password hashing.
 - `httpx`: For making HTTP requests to the SWAPI.

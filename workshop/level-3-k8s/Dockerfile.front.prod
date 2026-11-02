@@ -1,5 +1,5 @@
 # Multi-stage Dockerfile for SSR (follows Astro recipe)
-FROM node:24-alpine AS base
+FROM node:26-alpine AS base
 
 # Current working directory in the container
 WORKDIR /app

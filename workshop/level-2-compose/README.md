@@ -148,7 +148,7 @@ Once connected, your VS Code terminal will be running directly inside the Docker
 Look at this line in `compose.yaml`:
 
 ```yaml
-DATABASE_URL=postgresql://...@database:5432/...
+DATABASE_URL=postgresql+psycopg://...@database:5432/...
 ```
 
 In **Level 1**, we had to manually create a network (`docker network create`) and assign an alias (`--network-alias database`).

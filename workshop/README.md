@@ -32,8 +32,8 @@ For **Database** you need a local Postgres running manually.
 
 **Task**: Write a `Dockerfile` for both `back` and `front`.
 
-- **Backend**: Use `python:3.14-slim`, install dependencies, expose port 4000.
-- **Frontend**: Use `node:24-alpine`, build the Astro app, expose port 4321.
+- **Backend**: Use `python:3.15-slim`, install dependencies, expose port 4000.
+- **Frontend**: Use `node:26-alpine`, build the Astro app, expose port 4321.
 
 👉 **[Level 1: Containerization (Dockerizer)](level-1-docker/README.md)**
 

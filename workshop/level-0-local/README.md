@@ -78,7 +78,7 @@ Now that the database is ready, let's start the engine.
 2. Create .env:
 
     ```bash
-    DATABASE_URL=postgresql://postgres:yourpassword@localhost:5432/postgres
+    DATABASE_URL=postgresql+psycopg://postgres:yourpassword@localhost:5432/postgres
     JWT_SECRET=your_jwt_secret_key
     SWAPI_ENTRYPOINT=https://swapi.dev/api
     # OPENAI_API_KEY=your_openai_api_key
@@ -189,7 +189,7 @@ If you encounter weird errors or dependency issues, try a "clean slate":
 - Ensure you created the `.env` file in the `app/back/` directory with all required variables:
 
   ```env
-  DATABASE_URL=postgresql://postgres:yourpassword@localhost:5432/postgres
+  DATABASE_URL=postgresql+psycopg://postgres:yourpassword@localhost:5432/postgres
   JWT_SECRET=your_jwt_secret_key
   SWAPI_ENTRYPOINT=https://swapi.dev/api
   ```

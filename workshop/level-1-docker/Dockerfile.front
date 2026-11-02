@@ -1,5 +1,5 @@
-# Base image
-FROM node:24-alpine AS runtime
+# Base image - Node.js 26 LTS (version fixe)
+FROM node:26-alpine AS runtime
 
 # Current working directory in the container
 WORKDIR /app

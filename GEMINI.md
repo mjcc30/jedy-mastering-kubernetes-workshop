@@ -68,7 +68,7 @@ To know your standing, consult the `TODO.md` holocron within each level.
 
 ## 🛠️ The Tech Stack (Our Light Sabers)
 
-* **Backend**: Python 3.14 (The Serpent) with FastAPI.
+* **Backend**: Python 3.15 (The Serpent) with FastAPI.
 * **Frontend**: Astro (The Star Navigator) with Node.js.
 * **Database**: PostgreSQL (The Holocron).
 * **Infrastructure**: Docker, Kubernetes, Gateway API.

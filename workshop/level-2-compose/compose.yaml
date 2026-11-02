@@ -24,7 +24,7 @@ services:
     depends_on:
       - database # Ensure database starts before back
     environment:
-      - DATABASE_URL=postgresql://star_wars_user:star_wars_password@database:5432/star_wars # Database connection URL
+      - DATABASE_URL=postgresql+psycopg://star_wars_user:star_wars_password@database:5432/star_wars # Database connection URL (psycopg v3)
       - SWAPI_ENTRYPOINT=https://swapi.dev/api # External API endpoint
       - JWT_SECRET=MyBestSecret # JWT secret for authentication
 

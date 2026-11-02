@@ -1,10 +1,10 @@
 fastapi
 uvicorn
 sqlmodel
-psycopg2-binary
+psycopg[binary]
 python-jose
 passlib
-bcrypt==3.2.0
+bcrypt
 python-dotenv
 httpx
 python-multipart

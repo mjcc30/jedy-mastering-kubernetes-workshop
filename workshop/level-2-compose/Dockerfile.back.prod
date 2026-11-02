@@ -1,5 +1,5 @@
 # Build stage
-FROM python:3.14-slim AS builder
+FROM python:3.15-slim AS builder
 
 WORKDIR /app
 
@@ -16,7 +16,7 @@ RUN uv venv /opt/venv && \
     uv pip install --no-cache -r pyproject.toml --python /opt/venv
 
 # Runtime stage
-FROM python:3.14-slim AS runner
+FROM python:3.15-slim AS runner
 
 WORKDIR /app
 

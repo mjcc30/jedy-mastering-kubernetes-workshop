@@ -145,7 +145,7 @@ Now we must build our own ship, the **Jedy Backend**.
    We tell it to connect to the `database` alias we defined earlier.
 
    ```bash
-   docker run -d --name jedy-back --network starwars -p 4000:4000 -e DATABASE_URL=postgresql://star_wars_user:star_wars_password@database:5432/star_wars -e JWT_SECRET=mysecret -e SWAPI_ENTRYPOINT=https://swapi.dev/api jedy-backend
+   docker run -d --name jedy-back --network starwars -p 4000:4000 -e DATABASE_URL=postgresql+psycopg://star_wars_user:star_wars_password@database:5432/star_wars -e JWT_SECRET=mysecret -e SWAPI_ENTRYPOINT=https://swapi.dev/api jedy-backend
    ```
 
    **Command overview:**

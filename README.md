@@ -32,7 +32,7 @@ This special file, `GEMINI.md`, serves as the memory of our training sessions wi
 
 ## 🛠️ The Tech Stack (Our Light Sabers)
 
-* **Backend**: Python 3.14 with FastAPI
+* **Backend**: Python 3.15 with FastAPI
 * **Frontend**: Astro with Node.js
 * **Database**: PostgreSQL
 *   **Infrastructure**: Docker, Kubernetes, Gateway API

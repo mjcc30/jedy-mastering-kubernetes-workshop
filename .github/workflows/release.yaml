@@ -37,7 +37,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.14'
+          python-version: '3.15'
 
       - name: Install uv
         run: pip install uv
@@ -51,7 +51,7 @@ jobs:
       - name: Create .env file
         working-directory: workshop/app/back
         run: |
-          echo "DATABASE_URL=postgresql://star_wars_user:star_wars_password@localhost:5432/star_wars" > .env
+          echo "DATABASE_URL=postgresql+psycopg://star_wars_user:star_wars_password@localhost:5432/star_wars" > .env
           echo "API_ENTRYPOINT=https://swapi.dev/api" >> .env
           echo "JWT_SECRET=super_secret_ci_key" >> .env
           # echo "GOOGLE_API_KEY=${{ secrets.GOOGLE_API_KEY }}" >> .env
