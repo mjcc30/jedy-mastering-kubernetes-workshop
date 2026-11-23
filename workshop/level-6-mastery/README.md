@@ -41,7 +41,7 @@ A Graphical User Interface (GUI) to see your Deployments, Pods, and HPA graphs.
 We use Helm to install the official dashboard.
 
 ```bash
-helm repo add kubernetes-dashboard https://kubernetes.github.io/dashboard/
+helm repo add kubernetes-dashboard https://raw.githubusercontent.com/kubernetes/dashboard/gh-pages
 helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard --create-namespace --namespace kubernetes-dashboard \
   --set kong.proxy.http.enabled=true \
   --set kong.proxy.http.servicePort=80 \

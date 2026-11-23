@@ -10,6 +10,9 @@ spec:
     repoURL: https://github.com/mjcc30/Jedy-StarWarsKubernetes-Workshop
     targetRevision: HEAD
     path: workshop/level-5-sre/deploy # We deploy the SRE level configuration
+    directory:
+      # Keep the load-test tooling (deploy/k6/) out of the GitOps-managed app
+      exclude: "**/k6/**"
   destination:
     server: https://kubernetes.default.svc
     namespace: starwars
