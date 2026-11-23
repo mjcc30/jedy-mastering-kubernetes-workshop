@@ -103,7 +103,7 @@ Prevent insecure configurations from reaching the cluster.
 
 ### Automate Infrastructure Provisioning
 
-Currently, the Kubernetes cluster is assumed to exist (Docker Desktop/Minikube) or created manually.
+Currently, the Kubernetes cluster is assumed to exist (Docker Desktop) or created manually.
 
 - **Action**: Codify the cluster and cloud resource creation.
 - **Implementation**:

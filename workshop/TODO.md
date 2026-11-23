@@ -29,7 +29,7 @@ This document outlines the step-by-step progression for the **Jedy-StarWarsKuber
 ## ✅ Level 3: Kubernetes Basics
 **Goal:** Deploy to a local Kubernetes cluster.
 
-- [] **Cluster:** Enable K8s in Docker Desktop or start Minikube.
+- [] **Cluster:** Enable K8s in Docker Desktop.
 - [] **Manifests:** Create `postgres.yaml`, `back.yaml`, `front.yaml`.
 - [] **Deploy:** `kubectl apply -f .`.
 - [] **Verify:** Pods and Services running (`kubectl get pods`).

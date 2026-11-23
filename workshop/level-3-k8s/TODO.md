@@ -3,7 +3,7 @@
 Use this list to track your progress as you enter the Kubernetes universe.
 
 - [ ] **Prerequisites**
-  - [ ] Kubernetes enabled in Docker Desktop (or Minikube/Kind installed).
+  - [ ] Kubernetes enabled in Docker Desktop (or Kind installed).
   - [ ] `kubectl cluster-info` returns successful connection.
 - [ ] **Database Manifests**
   - [ ] `postgres.yaml` created (Deployment + Service).

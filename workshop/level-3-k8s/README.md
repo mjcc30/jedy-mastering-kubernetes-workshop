@@ -15,7 +15,7 @@ In this level, we will translate our `compose.yaml` into Kubernetes **Manifests*
 You need a cluster.
 
 - **Docker Desktop**: Kubernetes > Enable Kubernetes.
-- **Minikube / Kind**: If you prefer these, start them up.
+- **Kind**: If you prefer it, start it up.
 
 1. **Open a new terminal**
 
@@ -218,7 +218,6 @@ spec:
 
 7. **Verify**:
     - Open **[http://localhost:32766](http://localhost:32766)**.
-    - *Note for Minikube/Kubeadm*: Use your Node IP (`kubectl get nodes -o wide`) instead of localhost.
 
 ---
 
