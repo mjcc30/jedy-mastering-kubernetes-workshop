@@ -16,6 +16,12 @@ spec:
       labels:
         app: back # Must match the selector above
     spec:
+      # InitContainer: waits for the Database to accept TCP connections before
+      # starting the app, so the backend does not crash-loop while Postgres boots.
+      initContainers:
+        - name: wait-for-postgres
+          image: busybox:1.36
+          command: ['sh', '-c', "until nc -z postgres-service 5432; do echo waiting for postgres; sleep 2; done"]
       containers:
         - name: server # Name of the container
           # ⚠️ IMPORTANT:
